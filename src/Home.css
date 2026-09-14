@@ -1,0 +1,49 @@
+.home {
+    min-height: 100vh;
+}
+
+.hero {
+    min-height: 100vh;
+    background-image: url('./assets/dogs.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-text {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    color:white;
+}
+
+.hero-text p {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.hero-text button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
