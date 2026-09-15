@@ -1,12 +1,13 @@
 import '../Home.css'
+import { Link } from "react-router-dom"
 
 function Header() {
     return(
         <header className ="header">
             <h2>Doggy Daycare</h2>
             <nav>
-                <a href="/">Hem</a>
-                <a href="/dogs">Våra hundar</a>
+                <Link to="/doggy-daycare">Hem</Link>
+                <Link to="/dogs">Våra hundar</Link>
             </nav>
         </header>
     )

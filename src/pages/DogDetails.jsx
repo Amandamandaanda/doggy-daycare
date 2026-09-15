@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import "../DogDetails.css";
+import { Link } from "react-router-dom"
 
 function DogDetails({ dogs }) {
   const { chipNumber } = useParams();
@@ -33,13 +34,13 @@ function DogDetails({ dogs }) {
       <p>Telefon: {dog.owner.phoneNumber}</p>
 
       <div className="buttons">
-        <a href="/dogs">
+        <Link to="/dogs">
           <button>Tillbaka till katalogen</button>
-        </a>
+        </Link>
 
-        <a href="/">
+        <Link to="/doggy-daycare">
           <button>Startsida</button>
-        </a>
+        </Link>
       </div>
     </div>
   );
