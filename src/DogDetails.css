@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+.dog-details {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    background-color: #fff7fa;
+    border-radius: 20px;
+}
+
+.dog-image {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.dog-details h1 {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.dog-details h2 {
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.dog-details p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.buttons button {
+    padding: 12px 24px;
+    background-color: #f4a6c1;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    opacity: 0.85;
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+    .dog-details {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    .dog-image {
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons a {
+        width: 100%;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+}
