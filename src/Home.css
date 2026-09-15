@@ -56,6 +56,39 @@
     cursor: pointer;
 }
 
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    z-index: 2;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.header h2 {
+    font-size: 20px;
+    margin: 0;
+    color:white;
+}
+
+.header nav {
+    display: flex;
+    gap: 25px
+}
+
+.header a {
+    color: white;
+    font-weight: 600;
+}
+
+.header a:hover {
+    color: #f4a6c1;
+}
+
 @media (min-width: 600px) {
     .hero-text h1 {
         font-size: 56px;
@@ -66,5 +99,24 @@
     .hero-text button {
         font-size: 18px;
         padding: 15 px 30 px;
+    }
+
+    @media (max-width: 599px) {
+        .header {
+            padding: 15px 20px;
+        }
+
+        .header h2 {
+            font-size: 18px;
+        }
+
+        .header nav {
+            gap: 12px
+        }
+
+        .header a {
+            font-size: 14px;
+        }
+        
     }
 }

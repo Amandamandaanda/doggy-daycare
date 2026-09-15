@@ -1,8 +1,10 @@
 import '../Home.css'
+import Header from '../components/Header'
 
 function Home() {
     return(
         <main className="home">
+            <Header />
             <section className='hero'>
                 <div className="hero-text">
                      <h1>Välkommen till Doggy Daycare!</h1>
