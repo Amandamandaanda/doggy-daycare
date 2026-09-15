@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
 .home {
     min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
 }
 
 .hero {
@@ -25,25 +28,43 @@
     position: relative;
     text-align: center;
     color: white;
-    max-width: 900px;
+    z-index: 1;
     padding: 20px;
 }
 
 .hero-text h1 {
     font-size: 56px;
     margin-bottom: 20px;
+    font-weight: 800;
     color:white;
 }
 
 .hero-text p {
-    font-size: 22px;
-    margin-bottom: 15px;
+    font-size: 18px;
+    color: #f8eaf2;
+    margin-bottom: 30px;
 }
 
 .hero-text button {
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 12px 24px;
+    background-color: #f4a6c1;
+    font-size: 16px;
+    font-weight: 700;
     border: none;
-    border-radius: 10px;
+    color: white;
+    border-radius: 20px;
     cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    .hero-text h1 {
+        font-size: 56px;
+    }
+    .hero-text p {
+        font-size: 56 px;
+    }
+    .hero-text button {
+        font-size: 18px;
+        padding: 15 px 30 px;
+    }
 }
