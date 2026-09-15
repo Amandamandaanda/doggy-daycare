@@ -1,9 +1,11 @@
 import DogCard from "../components/DogCard";
 import "../Dogs.css";
+import Header from "../components/Header";
 
 function Dogs({ dogs }) {
   return (
     <main className="dogs-page">
+       <Header />
       <h1>Våra hundar</h1>
 
       <p className="dogs-page__intro">

@@ -142,3 +142,13 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+.dogs-page .header {
+  position: relative;
+  color: #3b1738;
+  margin-top: -45px;
+}
+
+.dogs-page .header a, .dogs-page .header h2 {
+  color: #3b1738;
+}
