@@ -45,7 +45,7 @@
     margin-bottom: 30px;
 }
 
-.hero-text button {
+.hero-text a {
     padding: 12px 24px;
     background-color: #f4a6c1;
     font-size: 16px;
@@ -54,6 +54,11 @@
     color: white;
     border-radius: 20px;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.hero-text a:hover {
+    transform: translateY(-2px);
 }
 
 .header {
@@ -96,7 +101,7 @@
     .hero-text p {
         font-size: 56 px;
     }
-    .hero-text button {
+    .hero-text a {
         font-size: 18px;
         padding: 15 px 30 px;
     }
