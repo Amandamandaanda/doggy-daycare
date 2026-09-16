@@ -5,7 +5,14 @@ function DogCard({ dog }) {
     <article className="dogs-page__card">
       <Link to={`/dogs/${dog.chipNumber}`}>
         <div className="dogs-page__photo">
-          <img src={dog.img} alt={dog.name} />
+           <img
+                src={dog.img || "/doggy-daycare/placeholder-dog.png"}
+                alt={dog.name}
+                onError={(event) => {
+                    event.currentTarget.onerror = null;
+                    event.currentTarget.src = "/doggy-daycare/placeholder-dog.png";
+                }}
+            />
         </div>
 
         <div className="dogs-page__info">
