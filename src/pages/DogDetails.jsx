@@ -38,7 +38,7 @@ function DogDetails({ dogs }) {
           <button>Tillbaka till katalogen</button>
         </Link>
 
-        <Link to="/doggy-daycare">
+        <Link to="/">
           <button>Startsida</button>
         </Link>
       </div>
