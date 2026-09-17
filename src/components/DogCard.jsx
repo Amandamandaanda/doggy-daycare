@@ -6,11 +6,11 @@ function DogCard({ dog }) {
       <Link to={`/dogs/${dog.chipNumber}`}>
         <div className="dogs-page__photo">
            <img
-                src={dog.img || "/doggy-daycare/placeholder-dog.png"}
+                src={dog.img || "/doggy-daycare/dog-icon.png"}
                 alt={dog.name}
                 onError={(event) => {
                     event.currentTarget.onerror = null;
-                    event.currentTarget.src = "/doggy-daycare/placeholder-dog.png";
+                    event.currentTarget.src = "/doggy-daycare/dog-icon.png";
                 }}
             />
         </div>
