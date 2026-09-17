@@ -6,7 +6,7 @@ function Header() {
         <header className ="header">
             <h2>Doggy Daycare</h2>
             <nav>
-                <Link to="/doggy-daycare">Hem</Link>
+                <Link to="/">Hem</Link>
                 <Link to="/dogs">Våra hundar</Link>
             </nav>
         </header>
