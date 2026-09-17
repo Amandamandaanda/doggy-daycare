@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+.dogs-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  background-color: #fff7fa;
+  color: #333;
+}
+
+.dogs-page h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #333;
+}
+
+.dogs-page h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 12px auto 0;
+  background-color: #f4a6c1;
+  border-radius: 20px;
+}
+
+.dogs-page__intro {
+  max-width: 600px;
+  margin: 18px auto 40px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.dogs-page__filter {
+  margin-bottom: 30px;
+}
+
+.dogs-page__grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.dogs-page__card {
+  overflow: hidden;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.dogs-page__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.13);
+}
+
+.dogs-page__card a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.dogs-page__photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background-color: #f8eaf2;
+}
+
+.dogs-page__photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.dogs-page__info {
+  padding: 18px;
+}
+
+.dogs-page__info h2 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #333;
+}
+
+.dogs-page__info p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #666;
+}
+
+.dogs-page__card:hover .dogs-page__info h2 {
+  color: #f4a6c1;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+  .dogs-page {
+    padding: 60px 30px;
+  }
+
+  .dogs-page__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  .dogs-page {
+    padding: 70px 40px;
+  }
+
+  .dogs-page h1 {
+    font-size: 2.8rem;
+  }
+
+  .dogs-page__intro {
+    font-size: 1.1rem;
+  }
+
+  .dogs-page__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dogs-page__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.dogs-page .header {
+  position: relative;
+  color: #3b1738;
+  margin-top: -45px;
+}
+
+.dogs-page .header a, .dogs-page .header h2 {
+  color: #3b1738;
+}

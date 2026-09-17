@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+.home {
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+}
+
+.hero {
+    min-height: 100vh;
+    background-image: url('./assets/dogs.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-text {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color:white;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #f8eaf2;
+    margin-bottom: 30px;
+}
+
+.hero-text a {
+    padding: 12px 24px;
+    background-color: #f4a6c1;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hero-text a:hover {
+    transform: translateY(-2px);
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    z-index: 2;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.header h2 {
+    font-size: 20px;
+    margin: 0;
+    color:white;
+}
+
+.header nav {
+    display: flex;
+    gap: 25px
+}
+
+.header a {
+    color: white;
+    font-weight: 600;
+}
+
+.header a:hover {
+    color: #f4a6c1;
+}
+
+@media (min-width: 600px) {
+    .hero-text h1 {
+        font-size: 56px;
+    }
+    .hero-text p {
+        font-size: 56 px;
+    }
+    .hero-text a {
+        font-size: 18px;
+        padding: 15 px 30 px;
+    }
+
+    @media (max-width: 599px) {
+        .header {
+            padding: 15px 20px;
+        }
+
+        .header h2 {
+            font-size: 18px;
+        }
+
+        .header nav {
+            gap: 12px
+        }
+
+        .header a {
+            font-size: 14px;
+        }
+        
+    }
+}
