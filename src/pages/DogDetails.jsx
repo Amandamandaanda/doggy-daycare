@@ -15,7 +15,15 @@ function DogDetails({ dogs }) {
 
   return (
     <div className="dog-details">
-      <img className="dog-image" src={dog.img} alt={dog.name} />
+       <img
+            className="dog-image"
+            src={dog.img || "/doggy-daycare/placeholder-dog.png"}
+            alt={dog.name}
+            onError={(event) => {
+            event.currentTarget.onerror = null;
+            event.currentTarget.src = "/doggy-daycare/placeholder-dog.png";
+            }}
+        />
 
       <h1>{dog.name}</h1>
 
