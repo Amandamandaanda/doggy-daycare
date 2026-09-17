@@ -37,6 +37,10 @@
   color: #666;
 }
 
+.dogs-page__filter {
+  margin-bottom: 30px;
+}
+
 .dogs-page__grid {
   width: 100%;
   max-width: 1200px;
